@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>90%</title>
+    <script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8"/>
+  </head>
+  <body bgcolor="#E6E6FA">
+    <label for='inputPts' id="LBL_REWARD">Reward of target position</label>
+    <input type = "number"
+        id = "inputPts"
+        value = "0" 
+		title = "Reward of position you want to get" 
+		min = 0 
+		autofocus />
+	<label>+90%: </label>
+	<label id='lblResult'></label><br>
+	<label>+90% x 2: </label>
+	<label id='lblResult2'></label><br>
+	<label for='inputTot' id="LBL_TOTAL">Total required for level</label>
+    <input type = "number"
+        id = "inputTot"
+        value = "0"
+		title = "Total points required for the GB in this level"
+		min = 0 />
+	<label id="LBL_SEC">Security for 1-2: </label>
+	<label id='lblSecurity'></label><br>
+	<label for='inputCom' id="LBL_CONTR">Total contributed</label>
+    <input type = "number"
+        id = "inputCom"
+        value = "0"
+		title = "Total points currently contributed to the GB so far"
+		min = 0 />
+	<label for='inputAdv' id="LBL_ADV">Current points in position</label>
+    <input type = "number"
+        id = "inputAdv"
+        value = "0"
+		title = "Points currently contributed by the player holding the position you want"
+		min = 0 />
+	<label id="LBL_REQ">Required points: </label>
+	<label id='lblResult3'></label><br>
+	<label id="LBL_PROF">Profit: </label>
+	<label id='lblResult4'></label><br>
+	<button type="button" id='butReset'>Reset</button>
+	<button type="button" id='butLang' width=25px>     </button>
+  </body>
+</html>
