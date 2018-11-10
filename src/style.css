@@ -3,7 +3,7 @@ label, input, button {
 	font-family:Helvetica;
 }
 
-#lblResult, #lblResult2, #lblResult3, #lblResult4, #lblSecurity {
+#lblResult, #lblResult3, #lblResult4, #lblSecurity {
     font-weight: bold;
 }
 
@@ -15,4 +15,18 @@ label, input, button {
 	width:40px;
 	height:20px;
 	float:right;
+}
+
+#butReset {
+    background-image : url(reset.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:25px;
+	height:20px;
+	float:left;
+}
+
+body {
+	width:145px;
 }

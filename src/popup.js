@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
   butRes.addEventListener('click', Reset, false);
   butLang.addEventListener('click', ToggleLocale, false);
   
+  document.addEventListener('keydown', function(event) {
+    if (!event.ctrlKey && !event.altKey && event.which === 82/*R*/) {
+        Reset();
+    }
+}, true);
+  
   loadValues();
   Calculate();
   DeployLocale(locale);
@@ -23,7 +29,6 @@ function Calculate(){
 	var input = Number(document.getElementById('inputPts').value);
 	var reward = Math.ceil(input*1.9)
     document.getElementById('lblResult').innerHTML = reward;
-	document.getElementById('lblResult2').innerHTML = reward*2;
 	
 	var ptsTotal = Number(document.getElementById('inputTot').value);
 	var ptsComm = Number(document.getElementById('inputCom').value);
@@ -86,7 +91,7 @@ function DeployLocale(lang){
 		document.getElementById('inputAdv').title = "Points currently contributed by the player holding the position you want";
 		document.getElementById('LBL_REQ').innerHTML = "Required points:";
 		document.getElementById('LBL_PROF').innerHTML = "Profit:";
-		document.getElementById('butReset').innerHTML = "Reset";
+		document.getElementById('butReset').title = "Reset all input fields (Shortcut R)";
 		document.getElementById('butLang').style.backgroundImage = "url('gr.png')";
 		
 	} else {
@@ -102,6 +107,7 @@ function DeployLocale(lang){
 		document.getElementById('inputAdv').title = "Πόντοι συνεισφοράς του παίκτη που κατέχει την θέση που επιθυμείτε";
 		document.getElementById('LBL_REQ').innerHTML = "Απαιτούμενοι πόντοι:";
 		document.getElementById('LBL_PROF').innerHTML = "Κέρδος:";
+		document.getElementById('butReset').title = "Μηδενισμός πεδίων (Shortcut R)";
 		document.getElementById('butLang').style.backgroundImage = "url('en.png')";
 		
 	}
