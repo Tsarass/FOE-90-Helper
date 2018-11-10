@@ -3,7 +3,7 @@
 
   "name": "FOE 90% Helper",
   "description": "FOE GB 90% calculation helper.",
-  "version": "0.1",
+  "version": "0.3",
 
   "browser_action": {
    "default_icon": "foeicon.png",
