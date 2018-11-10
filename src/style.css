@@ -8,7 +8,7 @@ label, input, button {
 }
 
 #butLang {
-    background-image : url(gr.png);
+    background-image : url(img/gr.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -18,7 +18,7 @@ label, input, button {
 }
 
 #butReset {
-    background-image : url(reset.png);
+    background-image : url(img/reset.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size:cover;

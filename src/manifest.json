@@ -6,7 +6,7 @@
   "version": "0.3",
 
   "browser_action": {
-   "default_icon": "foeicon.png",
+   "default_icon": "img/foeicon.png",
    "default_popup": "popup.html"
   },
   

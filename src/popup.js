@@ -92,7 +92,7 @@ function DeployLocale(lang){
 		document.getElementById('LBL_REQ').innerHTML = "Required points:";
 		document.getElementById('LBL_PROF').innerHTML = "Profit:";
 		document.getElementById('butReset').title = "Reset all input fields (Shortcut R)";
-		document.getElementById('butLang').style.backgroundImage = "url('gr.png')";
+		document.getElementById('butLang').style.backgroundImage = "url('img/gr.png')";
 		
 	} else {
 		
@@ -108,7 +108,7 @@ function DeployLocale(lang){
 		document.getElementById('LBL_REQ').innerHTML = "Απαιτούμενοι πόντοι:";
 		document.getElementById('LBL_PROF').innerHTML = "Κέρδος:";
 		document.getElementById('butReset').title = "Μηδενισμός πεδίων (Shortcut R)";
-		document.getElementById('butLang').style.backgroundImage = "url('en.png')";
+		document.getElementById('butLang').style.backgroundImage = "url('img/en.png')";
 		
 	}
 }
