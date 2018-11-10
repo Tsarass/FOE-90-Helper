@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   loadValues();
   Calculate();
   DeployLocale(locale);
+  document.getElementById("inputPts").select();
 }, false);
 
 function Calculate(){
